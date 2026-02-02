@@ -35,6 +35,8 @@ import testimonial_1 from './testimonial_1.png'
 import testimonial_2 from './testimonial_2.png'
 import testimonial_3 from './testimonial_3.png'
 
+import about_cover from './about_cover.png'
+
 
 export const assets = {
     logo,
@@ -65,6 +67,7 @@ export const assets = {
     ps_6,
     testimonial_1,
     testimonial_2,
-    testimonial_3
+    testimonial_3,
+    about_cover
 
 }

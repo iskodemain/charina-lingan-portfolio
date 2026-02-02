@@ -26,7 +26,6 @@ const Navbar = () => {
 
   const handleNavigation = (path) => {
     navigate(path);
-    setActiveLink(path);
     setIsMobileMenuOpen(false);
   };
 
