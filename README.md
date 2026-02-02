@@ -12,3 +12,4 @@ This is my personal portfolio website showcasing my projects, skills, and experi
 - Contact section
 
 ## Live Demo
+https://charina-lingan-portfolio.vercel.app/
