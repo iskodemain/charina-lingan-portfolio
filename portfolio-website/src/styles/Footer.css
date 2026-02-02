@@ -1,0 +1,177 @@
+@import url('https://fonts.cdnfonts.com/css/nexa-bold');
+
+.footer {
+  background: #fff;
+  padding: 60px 60px 40px;
+  border-top: 1px solid #F8F7F4;
+}
+
+.footer-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.social-icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+  background: #f8f8f8;
+  padding: 12px;
+}
+
+.social-icon:hover {
+  transform: translateY(-5px);
+}
+
+.social-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: filter 0.3s ease;
+}
+
+
+.logo-icon {
+  width: 60px;
+  height: 60px;
+  background: transparent;
+}
+
+.logo-icon:hover {
+  background: transparent;
+  transform: scale(1.1);
+}
+
+.logo-icon img {
+  filter: none;
+}
+
+.logo-icon:hover img {
+  filter: none;
+}
+
+.footer-copyright {
+  margin-top: 20px;
+}
+
+.footer-copyright p {
+  font-family: 'Nexa Bold', sans-serif;
+  font-size: 14px;
+  color: #666;
+  font-weight: 400;
+}
+
+/* Responsive - Tablet */
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 50px 40px 35px;
+  }
+
+  .footer-social {
+    gap: 30px;
+  }
+
+  .social-icon {
+    width: 45px;
+    height: 45px;
+  }
+
+  .logo-icon {
+    width: 55px;
+    height: 55px;
+  }
+
+  .footer-copyright p {
+    font-size: 13px;
+  }
+}
+
+/* Responsive - Mobile */
+@media screen and (max-width: 480px) {
+  .footer {
+    padding: 40px 25px 30px;
+  }
+
+  .footer-social {
+    gap: 25px;
+  }
+
+  .social-icon {
+    width: 42px;
+    height: 42px;
+  }
+
+  .logo-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .footer-copyright p {
+    font-size: 12px;
+  }
+}
+
+/* Responsive - Extra Small */
+@media screen and (max-width: 320px) {
+  .footer {
+    padding: 35px 20px 25px;
+  }
+
+  .footer-social {
+    gap: 20px;
+  }
+
+  .social-icon {
+    width: 38px;
+    height: 38px;
+  }
+
+  .logo-icon {
+    width: 45px;
+    height: 45px;
+  }
+
+  .footer-copyright p {
+    font-size: 11px;
+  }
+}
+
+/* Responsive - Minimum 200px */
+@media screen and (max-width: 200px) {
+  .footer {
+    padding: 30px 15px 20px;
+  }
+
+  .footer-social {
+    gap: 15px;
+  }
+
+  .social-icon {
+    width: 32px;
+    height: 32px;
+    padding: 8px;
+  }
+
+  .logo-icon {
+    width: 38px;
+    height: 38px;
+  }
+
+  .footer-copyright p {
+    font-size: 9px;
+  }
+}
