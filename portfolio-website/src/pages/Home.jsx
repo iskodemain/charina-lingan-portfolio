@@ -241,10 +241,10 @@ const Home = () => {
 
         {/* CTA Section */}
         <section className="cta-section">
-          <h2 className="cta-title">
-            Build Your Vision <span className="highlight">With Me</span>
+          <h2 className="hcta-title">
+            Build Your Vision With Me
           </h2>
-          <button className="btn-cta" onClick={() => navigate('/contact')}>
+          <button className="hbtn-cta" onClick={() => navigate('/contact')}>
             Work with me!
           </button>
         </section>
