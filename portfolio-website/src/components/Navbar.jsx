@@ -64,9 +64,11 @@ const Navbar = () => {
           )}
         </ul>
 
-        <button className="mobile-menu-btn" onClick={toggleMobileMenu}>
-          <HiMenuAlt3 />
-        </button>
+        {!isMobileMenuOpen && 
+            <button className="mobile-menu-btn" onClick={toggleMobileMenu}>
+            <HiMenuAlt3 />
+          </button>
+        }
       </div>
     </nav>
   );
