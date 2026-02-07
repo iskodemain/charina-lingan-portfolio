@@ -1,0 +1,587 @@
+@import url('https://fonts.cdnfonts.com/css/nexa-bold');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contact-page {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #FFFFFF 0%, #FFFCF2 50%, #F9F3E2 100%);
+  overflow-x: hidden;
+  font-family: 'Nexa', sans-serif;
+}
+
+
+/* ===================== HERO SECTION ===================== */
+.contact-hero-section {
+  padding: 150px 60px 100px;
+  text-align: center;
+  animation: slideDown 0.8s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contact-hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-hero-title {
+  font-size: 64px;
+  font-weight: 700;
+  color: #2d2d2d;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.contact-highlight {
+  color: #2d2d2d;
+  background-color: #F9EECB;
+  padding: 0 15px;
+}
+
+/* ===================== CARDS SECTION ===================== */
+.contact-cards-section {
+  padding: 0 60px 100px;
+}
+
+.contact-cards-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.contact-card {
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
+  text-align: left;
+  position: relative;
+  transition: all 0.3s ease;
+  animation: fadeInUp 0.6s ease-out backwards;
+}
+
+.contact-card:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.contact-card:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.contact-card:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contact-card-clickable {
+  cursor: pointer;
+}
+
+.contact-card-clickable:hover {
+  transform: translateY(-8px);
+}
+
+.contact-card-clickable:hover .contact-card-logo img {
+  transform: scale(1.1);
+}
+
+.contact-card-logo {
+  width: 45px;
+  height: 45px;
+  margin-bottom: 25px;
+  transition: transform 0.3s ease;
+}
+
+.contact-card-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.contact-card-title {
+  font-size: 24px;
+  font-weight: 400;
+  color: #2d2d2d;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+.contact-card-title.bold {
+    font-family: 'Nexa Bold', sans-serif;
+    font-weight: 700;
+}
+
+.contact-card-description {
+  font-size: 15px;
+  font-weight: 400;
+  color: #666;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ===================== CONTACT METHODS SECTION ===================== */
+.contact-methods-section {
+  padding: 0 60px 150px;
+}
+
+.contact-methods-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+}
+
+.contact-method-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  animation: scaleIn 0.6s ease-out backwards;
+}
+
+.contact-method-item:nth-child(1) {
+  animation-delay: 0.3s;
+}
+
+.contact-method-item:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.contact-method-item:nth-child(3) {
+  animation-delay: 0.7s;
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.contact-method-item:hover {
+  transform: translateX(5px);
+}
+
+.contact-method-item:hover .contact-method-icon img {
+  transform: scale(1.1);
+}
+
+.contact-method-icon {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.contact-method-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.contact-method-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.contact-method-text {
+  font-size: 20px;
+  font-weight: 400;
+  color: #2d2d2d;
+  margin: 0;
+  font-family: 'Nexa', sans-serif;
+}
+
+.contact-method-name {
+  font-family: 'Nexa Bold', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.contact-method-subtext {
+  font-size: 14px;
+  font-weight: 400;
+  color: #666;
+  margin: 0;
+}
+
+/* ===================== RESPONSIVE - TABLET ===================== */
+@media screen and (max-width: 1024px) {
+  .contact-hero-section {
+    padding: 130px 40px 80px;
+  }
+
+  .contact-hero-title {
+    font-size: 60px;
+  }
+
+  .contact-cards-section {
+    padding: 0 40px 80px;
+  }
+
+  .contact-cards-container {
+    gap: 35px;
+  }
+
+  .contact-card-logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .contact-card-title {
+    font-size: 22px;
+  }
+
+  .contact-card-description {
+    font-size: 14px;
+  }
+
+  .contact-methods-section {
+    padding: 0 40px 120px;
+  }
+
+  .contact-methods-container {
+    gap: 50px;
+  }
+
+  .contact-method-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .contact-method-text {
+    font-size: 17px;
+  }
+
+  .contact-method-name {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 902px) {
+    .contact-method-icon {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/* ===================== RESPONSIVE - MOBILE ===================== */
+@media screen and (max-width: 768px) {
+  .contact-hero-section {
+    padding: 110px 25px 60px;
+  }
+
+  .contact-hero-title {
+    font-size: 42px;
+  }
+
+  .contact-highlight {
+    padding: 0 12px;
+  }
+
+  .contact-cards-section {
+    padding: 0 25px 60px;
+  }
+
+  .contact-cards-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .contact-card-logo {
+    width: 65px;
+    height: 65px;
+  }
+
+  .contact-card-title {
+    font-size: 20px;
+  }
+
+  .contact-card-description {
+    font-size: 14px;
+  }
+
+  .contact-methods-section {
+    padding: 0 25px 100px;
+  }
+
+  .contact-methods-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .contact-method-item {
+    gap: 15px;
+  }
+
+  .contact-method-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .contact-method-text {
+    font-size: 16px;
+  }
+
+  .contact-method-name {
+    font-size: 17px;
+  }
+
+  .contact-method-subtext {
+    font-size: 13px;
+  }
+}
+
+/* ===================== RESPONSIVE - SMALL MOBILE ===================== */
+@media screen and (max-width: 480px) {
+  .contact-hero-section {
+    padding: 100px 20px 50px;
+  }
+
+  .contact-hero-title {
+    font-size: 36px;
+  }
+
+  .contact-highlight {
+    padding: 0 10px;
+  }
+
+  .contact-cards-section {
+    padding: 0 20px 50px;
+  }
+
+  .contact-cards-container {
+    gap: 40px;
+  }
+
+  .contact-card-logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .contact-card-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .contact-card-description {
+    font-size: 13px;
+  }
+
+  .contact-methods-section {
+    padding: 0 20px 80px;
+  }
+
+  .contact-methods-container {
+    gap: 35px;
+  }
+
+  .contact-method-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .contact-method-text {
+    font-size: 15px;
+  }
+
+  .contact-method-name {
+    font-size: 16px;
+  }
+
+  .contact-method-subtext {
+    font-size: 12px;
+  }
+
+  .contact-loading-logo img {
+    height: 60px;
+  }
+
+  .contact-loading-bar {
+    width: 200px;
+  }
+}
+
+/* ===================== RESPONSIVE - EXTRA SMALL ===================== */
+@media screen and (max-width: 320px) {
+  .contact-hero-section {
+    padding: 90px 15px 40px;
+  }
+
+  .contact-hero-title {
+    font-size: 30px;
+  }
+
+  .contact-highlight {
+    padding: 0 8px;
+  }
+
+  .contact-cards-section {
+    padding: 0 15px 40px;
+  }
+
+  .contact-cards-container {
+    gap: 35px;
+  }
+
+  .contact-card-logo {
+    width: 55px;
+    height: 55px;
+    margin-bottom: 20px;
+  }
+
+  .contact-card-title {
+    font-size: 17px;
+    margin-bottom: 12px;
+  }
+
+  .contact-card-description {
+    font-size: 12px;
+  }
+
+  .contact-methods-section {
+    padding: 0 15px 70px;
+  }
+
+  .contact-methods-container {
+    gap: 30px;
+  }
+
+  .contact-method-item {
+    gap: 12px;
+  }
+
+  .contact-method-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .contact-method-text {
+    font-size: 14px;
+  }
+
+  .contact-method-name {
+    font-size: 15px;
+  }
+
+  .contact-method-subtext {
+    font-size: 11px;
+  }
+}
+
+/* ===================== RESPONSIVE - MINIMUM 200PX ===================== */
+@media screen and (max-width: 200px) {
+  .contact-hero-section {
+    padding: 80px 10px 35px;
+  }
+
+  .contact-hero-title {
+    font-size: 24px;
+  }
+
+  .contact-highlight {
+    padding: 0 6px;
+    border-radius: 4px;
+  }
+
+  .contact-cards-section {
+    padding: 0 10px 35px;
+  }
+
+  .contact-cards-container {
+    gap: 30px;
+  }
+
+  .contact-card-logo {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 15px;
+  }
+
+  .contact-card-title {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .contact-card-description {
+    font-size: 10px;
+    line-height: 1.5;
+  }
+
+  .contact-methods-section {
+    padding: 0 10px 60px;
+  }
+
+  .contact-methods-container {
+    gap: 25px;
+  }
+
+  .contact-method-item {
+    gap: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-method-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .contact-method-text {
+    font-size: 12px;
+  }
+
+  .contact-method-name {
+    font-size: 13px;
+  }
+
+  .contact-method-subtext {
+    font-size: 9px;
+  }
+
+  .contact-loading-logo img {
+    height: 45px;
+  }
+
+  .contact-loading-bar {
+    width: 150px;
+  }
+
+  .contact-loading-text {
+    font-size: 12px;
+  }
+}

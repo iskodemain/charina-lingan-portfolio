@@ -37,6 +37,10 @@ import testimonial_3 from './testimonial_3.png'
 
 import about_cover from './about_cover.png'
 
+import wcp_icon from './wcp_icon.png'
+import ecp_icon from './ecp_icon.png'
+import cpf_icon from './cpf_icon.png'
+
 
 export const assets = {
     logo,
@@ -68,6 +72,9 @@ export const assets = {
     testimonial_1,
     testimonial_2,
     testimonial_3,
-    about_cover
+    about_cover,
+    wcp_icon,
+    ecp_icon,
+    cpf_icon
 
 }
