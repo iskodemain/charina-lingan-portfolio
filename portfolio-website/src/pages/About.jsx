@@ -17,7 +17,7 @@ const About = () => {
             <div className="about-quote-container">
               <h1 className="about-quote">
                 <span className="quote-mark">"</span>
-                You have to <span className="highlight-text">believe</span>for it to happen<span className="quote-mark">"</span>
+                You have to <span className="highlight-text">believe</span> for it <br />to happen<span className="quote-mark">"</span>
               </h1>
             </div>
             
