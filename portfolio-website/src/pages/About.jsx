@@ -39,7 +39,7 @@ const About = () => {
 
         {/* Cover Image Section */}
         <section className="about-cover-section">
-          <img src={assets.about_cover} alt="About Cover" className="about-cover-image" />
+          <img src={assets.about_cover} alt="About Cover" className="about-cover-image" draggable={false}/>
         </section>
 
         {/* Brands Section - DO NOT MODIFY */}
@@ -47,17 +47,17 @@ const About = () => {
           <h2 className="section-title">BRANDS I'VE WORKED WITH</h2>
           <div className="brands-carousel">
             <div className="brands-track">
-              <img src={assets.brand_1} alt="Brand 1" />
-              <img src={assets.brand_2} alt="Brand 2" />
-              <img src={assets.brand_3} alt="Brand 3" />
-              <img src={assets.brand_4} alt="Brand 4" />
-              <img src={assets.brand_5} alt="Brand 5" />
+              <img src={assets.brand_1} alt="Brand 1" draggable={false}/>
+              <img src={assets.brand_2} alt="Brand 2" draggable={false}/>
+              <img src={assets.brand_3} alt="Brand 3" draggable={false}/>
+              <img src={assets.brand_4} alt="Brand 4" draggable={false}/>
+              <img src={assets.brand_5} alt="Brand 5" draggable={false}/>
               {/* Duplicate for seamless loop */}
-              <img src={assets.brand_1} alt="Brand 1" />
-              <img src={assets.brand_2} alt="Brand 2" />
-              <img src={assets.brand_3} alt="Brand 3" />
-              <img src={assets.brand_4} alt="Brand 4" />
-              <img src={assets.brand_5} alt="Brand 5" />
+              <img src={assets.brand_1} alt="Brand 1" draggable={false}/>
+              <img src={assets.brand_2} alt="Brand 2" draggable={false}/>
+              <img src={assets.brand_3} alt="Brand 3" draggable={false}/>
+              <img src={assets.brand_4} alt="Brand 4" draggable={false}/>
+              <img src={assets.brand_5} alt="Brand 5" draggable={false}/>
             </div>
           </div>
         </section>

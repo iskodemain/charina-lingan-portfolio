@@ -218,9 +218,18 @@
 }
 
 .secondary-cta {
-  background-color: transparent;
+  padding-inline: 55px;
+  background: transparent;
   color: #E9BC32;
-  border: 2px solid #E9BC32;
+  /* gradient border */
+  border: 2px solid transparent;
+  background-image:
+    linear-gradient(#F9F3E2, #F9F3E2),
+    linear-gradient(90deg, #E9BC32, #C5CB82);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+
+  transition: all 0.3s ease;
 }
 
 .secondary-cta:hover {

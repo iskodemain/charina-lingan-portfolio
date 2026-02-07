@@ -37,7 +37,7 @@ const Navbar = () => {
     <nav className={`navbar ${isScrolled ? 'navbar-scrolled' : ''}`}>
       <div className="navbar-container">
         <div className="navbar-logo" onClick={() => handleNavigation('/')}>
-          <img src={assets.logo} alt="Logo" />
+          <img src={assets.logo} alt="Logo" draggable={false} />
         </div>
 
         <ul className={`navbar-menu ${isMobileMenuOpen ? 'mobile-menu-active' : ''}`}>
