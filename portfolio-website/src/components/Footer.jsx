@@ -18,19 +18,19 @@ const Footer = () => {
             className="social-icon" 
             onClick={() => handleSocialClick('https://www.facebook.com/CharinaLingan23')}
           >
-            <img src={assets.facebook} alt="Facebook" />
+            <img src={assets.facebook} alt="Facebook" draggable={false}/>
           </div>
           <div 
             className="social-icon logo-icon" 
             onClick={() => navigate('/')}
           >
-            <img src={assets.logo} alt="Logo" />
+            <img src={assets.logo} alt="Logo" draggable={false}/>
           </div>
           <div 
             className="social-icon" 
             onClick={() => handleSocialClick('https://www.linkedin.com/in/charinajoylingan/')}
           >
-            <img src={assets.linkedin} alt="LinkedIn" />
+            <img src={assets.linkedin} alt="LinkedIn" draggable={false}/>
           </div>
         </div>
         <div className="footer-copyright">

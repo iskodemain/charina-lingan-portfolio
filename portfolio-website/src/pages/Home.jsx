@@ -73,12 +73,12 @@ const Home = () => {
       <div className="loading-screen">
         <div className="loading-content">
           <div className="loading-logo">
-            <img src={assets.logo} alt="Logo" />
+            <img src={assets.logo} alt="Logo" draggable={false}/>
           </div>
           <div className="loading-bar">
             <div className="loading-progress"></div>
           </div>
-          <p className="loading-text">Loading Amazing Work...</p>
+          <p className="loading-text">Use Desktop View For Experience...</p>
         </div>
       </div>
     );
@@ -94,8 +94,8 @@ const Home = () => {
           <div className="hero-container">
             <div className="hero-content">
               <h1 className="hero-title">
-                Helping brands show <br/>
-                their <span className="highlight">vision...</span>
+                Helping <br/>
+                brands show <br/>their <span className="hm-highlight">vision...</span>
               </h1>
               <p className="hero-subtitle">
                 I'm a passionate designer crafting compelling visual narratives that elevate brands and connect with audiences.
@@ -111,7 +111,7 @@ const Home = () => {
             </div>
             <div className="hero-image">
               <div className="profile-container">
-                <img src={assets.profile} alt="Profile" />
+                <img src={assets.profile} alt="Profile" draggable={false}/>
                 <div className="profile-tag tag-1">
                   <span>⭐</span> Great Designs
                 </div>
@@ -131,7 +131,7 @@ const Home = () => {
           <h2 className="section-title">SEE THE VISIONS I BROUGHT TO LIFE</h2>
           <div className="visions-slider">
             <div className="vision-card" onClick={() => navigate('/portfolio')}>
-              <img src={visionImages[currentVisionIndex]} alt="Vision" />
+              <img src={visionImages[currentVisionIndex]} alt="Vision" draggable={false}/>
             </div>
             <div className="slider-dots">
               {visionImages.map((_, index) => (
@@ -150,17 +150,17 @@ const Home = () => {
           <h2 className="section-title">BRANDS I'VE WORKED WITH</h2>
           <div className="brands-carousel">
             <div className="brands-track">
-              <img src={assets.brand_1} alt="Brand 1" />
-              <img src={assets.brand_2} alt="Brand 2" />
-              <img src={assets.brand_3} alt="Brand 3" />
-              <img src={assets.brand_4} alt="Brand 4" />
-              <img src={assets.brand_5} alt="Brand 5" />
+              <img src={assets.brand_1} alt="Brand 1" draggable={false}/>
+              <img src={assets.brand_2} alt="Brand 2" draggable={false}/>
+              <img src={assets.brand_3} alt="Brand 3" draggable={false}/>
+              <img src={assets.brand_4} alt="Brand 4" draggable={false}/>
+              <img src={assets.brand_5} alt="Brand 5" draggable={false}/>
               {/* Duplicate for seamless loop */}
-              <img src={assets.brand_1} alt="Brand 1" />
-              <img src={assets.brand_2} alt="Brand 2" />
-              <img src={assets.brand_3} alt="Brand 3" />
-              <img src={assets.brand_4} alt="Brand 4" />
-              <img src={assets.brand_5} alt="Brand 5" />
+              <img src={assets.brand_1} alt="Brand 1" draggable={false}/>
+              <img src={assets.brand_2} alt="Brand 2" draggable={false}/>
+              <img src={assets.brand_3} alt="Brand 3" draggable={false}/>
+              <img src={assets.brand_4} alt="Brand 4" draggable={false}/>
+              <img src={assets.brand_5} alt="Brand 5" draggable={false}/>
             </div>
           </div>
         </section>
@@ -197,9 +197,9 @@ const Home = () => {
             {filteredItems.map((item, index) => (
               <div key={index} className="portfolio-card" onClick={() => navigate('/portfolio')}>
                 <div className="portfolio-image-wrapper">
-                  <img src={item.img} alt={item.name} />
+                  <img src={item.img} alt={item.name} draggable={false} />
                   <div className="portfolio-overlay">
-                    <img src={assets.logo} alt="Logo" className="overlay-logo" />
+                    <img src={assets.logo} alt="Logo" className="overlay-logo" draggable={false}/>
                   </div>
                 </div>
                 <div className='portfolio-info'>
@@ -217,23 +217,23 @@ const Home = () => {
           <div className="testimonials-carousel">
             <div className="testimonials-track">
               <div className="testimonial-card">
-                <img src={assets.testimonial_1} alt="Testimonial 1" />
+                <img src={assets.testimonial_1} alt="Testimonial 1" draggable={false}/>
               </div>
               <div className="testimonial-card">
-                <img src={assets.testimonial_2} alt="Testimonial 2" />
+                <img src={assets.testimonial_2} alt="Testimonial 2" draggable={false}/>
               </div>
               <div className="testimonial-card">
-                <img src={assets.testimonial_3} alt="Testimonial 3" />
+                <img src={assets.testimonial_3} alt="Testimonial 3" draggable={false}/>
               </div>
               {/* Duplicate for seamless loop */}
               <div className="testimonial-card">
-                <img src={assets.testimonial_1} alt="Testimonial 1" />
+                <img src={assets.testimonial_1} alt="Testimonial 1" draggable={false}/>
               </div>
               <div className="testimonial-card">
-                <img src={assets.testimonial_2} alt="Testimonial 2" />
+                <img src={assets.testimonial_2} alt="Testimonial 2" draggable={false}/>
               </div>
               <div className="testimonial-card">
-                <img src={assets.testimonial_3} alt="Testimonial 3" />
+                <img src={assets.testimonial_3} alt="Testimonial 3" draggable={false}/>
               </div>
             </div>
           </div>

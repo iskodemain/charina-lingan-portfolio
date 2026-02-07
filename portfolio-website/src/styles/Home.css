@@ -139,39 +139,49 @@
 
 .btn-primary {
   padding: 16px 36px;
-  background: #F5B301;
+  background: linear-gradient(
+    90deg,
+    #E9BC32 0%,
+    #E9BC32 45%,
+    #C5CB82 100%
+  );
   color: #fff;
   border: none;
   border-radius: 8px;
   font-size: 16px;
-  font-weight: 900;
+  font-weight: 400;
   cursor: pointer;
   transition: all 0.3s ease;
+  font-family: 'Nexa', sans-serif;
 }
 
 .btn-primary:hover {
-  background: #d69d01;
   transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(245, 179, 1, 0.3);
 }
 
 .btn-secondary {
-  padding: 16px 36px;
+  font-family: 'Nexa', sans-serif;
+  padding: 17px 36px;
   background: transparent;
-  color: #2d2d2d;
-  border: 2px solid #2d2d2d;
-  border-radius: 8px;
+  color: #E9BC32;
   font-size: 16px;
-  font-weight: 900;
+  font-weight: 400;
   cursor: pointer;
+  border-radius: 12px;
+
+  /* gradient border */
+  border: 2px solid transparent;
+  background-image:
+    linear-gradient(white, white),
+    linear-gradient(90deg, #E9BC32, #C5CB82);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+
   transition: all 0.3s ease;
 }
 
 .btn-secondary:hover {
-  background: #2d2d2d;
-  color: #fff;
   transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(45, 45, 45, 0.2);
 }
 
 .hero-image {

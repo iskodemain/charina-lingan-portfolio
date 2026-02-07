@@ -17,7 +17,7 @@ const Contact = () => {
   };
 
   const handleFacebook = () => {
-    window.open('https://facebook.com/CharinalJoyLingan', '_blank');
+    window.open('https://www.facebook.com/CharinaLingan23', '_blank');
   };
 
   return (
@@ -44,7 +44,7 @@ const Contact = () => {
               onClick={() => navigate('/portfolio')}
             >
               <div className="contact-card-logo">
-                <img src={assets.logo} alt="Logo" />
+                <img src={assets.logo} alt="Logo" draggable={false}/>
               </div>
               <h3 className="contact-card-title">Check How We Work</h3>
               <p className="contact-card-description">
@@ -58,7 +58,7 @@ const Contact = () => {
               onClick={() => navigate('/services')}
             >
               <div className="contact-card-logo">
-                <img src={assets.logo} alt="Logo" />
+                <img src={assets.logo} alt="Logo" draggable={false}/>
               </div>
               <h3 className="contact-card-title">Pick a Package/Service</h3>
               <p className="contact-card-description">
@@ -69,7 +69,7 @@ const Contact = () => {
             {/* Card 3: Contact Us */}
             <div className="contact-card">
               <div className="contact-card-logo">
-                <img src={assets.logo} alt="Logo" />
+                <img src={assets.logo} alt="Logo" draggable={false}/>
               </div>
               <h3 className="contact-card-title bold">Contact Us</h3>
               <p className="contact-card-description">
@@ -90,7 +90,7 @@ const Contact = () => {
               onClick={handleWhatsApp}
             >
               <div className="contact-method-icon">
-                <img src={assets.wcp_icon} alt="WhatsApp" />
+                <img src={assets.wcp_icon} alt="WhatsApp" draggable={false}/>
               </div>
               <p className="contact-method-text">Charina Lingan</p>
             </div>
@@ -101,7 +101,7 @@ const Contact = () => {
               onClick={handleEmail}
             >
               <div className="contact-method-icon">
-                <img src={assets.ecp_icon} alt="Email" />
+                <img src={assets.ecp_icon} alt="Email" draggable={false}/>
               </div>
               <p className="contact-method-text">charinajoylingan@gmail.com</p>
             </div>
@@ -112,7 +112,7 @@ const Contact = () => {
               onClick={handleFacebook}
             >
               <div className="contact-method-icon">
-                <img src={assets.cpf_icon} alt="Facebook" />
+                <img src={assets.cpf_icon} alt="Facebook" draggable={false}/>
               </div>
               <div className="contact-method-text-wrapper">
                 <p className="contact-method-text contact-method-name">Charina Joy Lingan</p>
