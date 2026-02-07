@@ -521,17 +521,6 @@
   }
 }
 
-/* ===========================
-   SMOOTH SCROLLING & TRANSITIONS
-   =========================== */
-html {
-  scroll-behavior: smooth;
-}
-
-* {
-  box-sizing: border-box;
-}
-
 /* Accessibility - Reduced Motion */
 @media (prefers-reduced-motion: reduce) {
   *,
