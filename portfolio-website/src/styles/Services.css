@@ -141,7 +141,7 @@
 /* ===================== RESPONSIVE - TABLET (768px) ===================== */
 @media screen and (max-width: 768px) {
   .services-hero {
-    padding: 80px 30px 60px;
+    padding: 110px 25px 60px;
   }
 
   .services-hero-title {
@@ -190,7 +190,7 @@
 /* ===================== RESPONSIVE - MOBILE LARGE (480px) ===================== */
 @media screen and (max-width: 480px) {
   .services-hero {
-    padding: 60px 20px 50px;
+    padding: 100px 20px 50px;
   }
 
   .services-hero-title {
@@ -241,11 +241,11 @@
 /* ===================== RESPONSIVE - MOBILE SMALL (320px) ===================== */
 @media screen and (max-width: 320px) {
   .services-hero {
-    padding: 50px 15px 40px;
+    padding: 90px 15px 40px;
   }
 
   .services-hero-title {
-    font-size: 2.2rem;
+    font-size: 30px;
   }
 
   .services-grid-section {
@@ -295,12 +295,12 @@
 /* ===================== RESPONSIVE - MINIMUM 200px ===================== */
 @media screen and (max-width: 200px) {
   .services-hero {
-    padding: 40px 10px 30px;
+    padding: 80px 10px 35px;
   }
 
   .services-hero-title {
     font-size: 1.5rem;
-    letter-spacing: 0.05em;
+
   }
 
   .services-grid-section {

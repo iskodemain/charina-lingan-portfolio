@@ -629,14 +629,15 @@ const Home = () => {
               <div className="profile-container">
                 <img src={assets.profile} alt="Profile" draggable={false}/>
                 <div className="profile-tag tag-1">
-                  <span>⭐</span> Great Designs
+                  <span>⭐</span> 10+ Clients Served
                 </div>
                 <div className="profile-tag tag-2">
-                  <span>🎨</span> Art
+                  <span>✨</span> 1 Yr in Social Media Management
                 </div>
                 <div className="profile-tag tag-3">
-                  <span>✨</span> Charina Lingan
+                  <span>🎨</span> 4+ Yrs in Multimedia Design
                 </div>
+                
               </div>
             </div>
           </div>
