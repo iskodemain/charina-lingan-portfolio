@@ -38,7 +38,7 @@ const Contact = () => {
         <section className="contact-cards-section">
           <div className="contact-cards-container">
             
-            {/* Card 1: Check How We Work */}
+            {/* Card 1: Check How I Work */}
             <div 
               className="contact-card contact-card-clickable" 
               onClick={() => navigate('/portfolio')}
@@ -46,13 +46,13 @@ const Contact = () => {
               <div className="contact-card-logo">
                 <img src={assets.logo} alt="Logo" draggable={false}/>
               </div>
-              <h3 className="contact-card-title">Check How We Work</h3>
+              <h3 className="contact-card-title">Check How I Work</h3>
               <p className="contact-card-description">
                 Look through my case studies to see how I turn ideas into high-quality, intentional content. Let's see if my style matches your brand's vision.
               </p>
             </div>
 
-            {/* Card 2: Pick a Package/Service */}
+            {/* Card 2: Pick a Service*/}
             <div 
               className="contact-card contact-card-clickable" 
               onClick={() => navigate('/services')}
@@ -60,9 +60,9 @@ const Contact = () => {
               <div className="contact-card-logo">
                 <img src={assets.logo} alt="Logo" draggable={false}/>
               </div>
-              <h3 className="contact-card-title">Pick a Package/Service</h3>
+              <h3 className="contact-card-title">Pick a Service</h3>
               <p className="contact-card-description">
-                Explore my tailored packages to find the best support for your current goals and budget.
+                Explore my services and discover the right support tailored to your current goals and next move.
               </p>
             </div>
 
@@ -71,7 +71,7 @@ const Contact = () => {
               <div className="contact-card-logo">
                 <img src={assets.logo} alt="Logo" draggable={false}/>
               </div>
-              <h3 className="contact-card-title bold">Contact Us</h3>
+              <h3 className="contact-card-title bold">Contact Me</h3>
               <p className="contact-card-description">
                 Ready to start? Message me via WhatsApp, Messenger, or Email. Let’s talk about your vision and how we can bring it to life.
               </p>
