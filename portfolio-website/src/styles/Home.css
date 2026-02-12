@@ -247,7 +247,7 @@
 .profile-tag {
   position: absolute;
   padding: 12px 20px;
-  background: #ffffff50;
+  background: rgba(255, 255, 255, 0.541);
   border-radius: 50px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   font-size: 14px;
