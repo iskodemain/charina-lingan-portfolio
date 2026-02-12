@@ -37,14 +37,14 @@ const Home = () => {
     { img: assets.ps_3, category: 'PROFESSIONAL SERVICES', name: 'Social Media Agency', description: 'Content Producer | Visual Designer' },
     { img: assets.ps_4, category: 'PROFESSIONAL SERVICES', name: 'Commercial Cleaning Property', description: 'Content Producer | Video Editor' },
     { img: assets.ps_5, category: 'PROFESSIONAL SERVICES', name: 'Cleaning Services', description: 'Content Producer | Visual Designer' },
-    { img: assets.hr_2, category: 'HOSPITALITY & RENTALS', name: 'Property Management', description: 'Content Producer | Visual Design' },
+    { img: assets.hr_2, category: 'HOSPITALITY & RENTALS', name: 'Property Management', description: 'Content Producer | Visual Designer' },
     { img: assets.hr_1, category: 'HOSPITALITY & RENTALS', name: 'Vacation Rentals', description: 'Graphic Designer' },
     { img: assets.fc_1, category: 'FAMILY & CARE', name: 'Natural Dog Treats', description: 'Graphic Designer' },
     { img: assets.fbs_1, category: 'FOOD & BEVERAGES', name: "Churro Café", description: 'Content Producer | Video Editor' },
     { img: assets.fbs_2, category: 'FOOD & BEVERAGES', name: 'Mexican Coffeehouse', description: 'Content Producer | Video Editor' },
     { img: assets.personality_2, category: 'PERSONALITY', name: 'CG Artist', description: 'Video Editor' },
-    { img: assets.personality_1, category: 'PERSONALITY', name: 'Media Kit Template', description: 'Graphic Design' },
-    { img: assets.ps_6, category: 'PROFESSIONAL SERVICES', name: 'Digital Mentorship Platform', description: 'Graphic Design' },
+    { img: assets.personality_1, category: 'PERSONALITY', name: 'Media Kit Template', description: 'Graphic Designer' },
+    { img: assets.ps_6, category: 'PROFESSIONAL SERVICES', name: 'Digital Mentorship Platform', description: 'Graphic Designer' },
   ];
 
   // Portfolio galleries - easily expandable for other portfolios
@@ -671,12 +671,22 @@ const Home = () => {
               <img src={assets.brand_3} alt="Brand 3" draggable={false}/>
               <img src={assets.brand_4} alt="Brand 4" draggable={false}/>
               <img src={assets.brand_5} alt="Brand 5" draggable={false}/>
+              <img src={assets.brand_6} alt="Brand 6" draggable={false}/>
+              <img src={assets.brand_7} alt="Brand 7" draggable={false}/>
+              <img src={assets.brand_8} alt="Brand 8" draggable={false}/>
+              <img src={assets.brand_9} alt="Brand 9" draggable={false}/>
+              <img src={assets.brand_10} alt="Brand 10" draggable={false}/>
               {/* Duplicate for seamless loop */}
               <img src={assets.brand_1} alt="Brand 1" draggable={false}/>
               <img src={assets.brand_2} alt="Brand 2" draggable={false}/>
               <img src={assets.brand_3} alt="Brand 3" draggable={false}/>
               <img src={assets.brand_4} alt="Brand 4" draggable={false}/>
               <img src={assets.brand_5} alt="Brand 5" draggable={false}/>
+              <img src={assets.brand_6} alt="Brand 6" draggable={false}/>
+              <img src={assets.brand_7} alt="Brand 7" draggable={false}/>
+              <img src={assets.brand_8} alt="Brand 8" draggable={false}/>
+              <img src={assets.brand_9} alt="Brand 9" draggable={false}/>
+              <img src={assets.brand_10} alt="Brand 10" draggable={false}/>
             </div>
           </div>
         </section>

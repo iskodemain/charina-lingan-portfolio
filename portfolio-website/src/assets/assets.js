@@ -6,6 +6,11 @@ import brand_2 from './brand_2.png'
 import brand_3 from './brand_3.png'
 import brand_4 from './brand_4.png'
 import brand_5 from './brand_5.png'
+import brand_6 from './brand_6.png'
+import brand_7 from './brand_7.png'
+import brand_8 from './brand_8.png'
+import brand_9 from './brand_9.png'
+import brand_10 from './brand_10.png'
 
 import facebook from './facebook.png'
 import linkedin from './linkedin.png'
@@ -328,6 +333,11 @@ export const assets = {
     brand_3,
     brand_4,
     brand_5,
+    brand_6,
+    brand_7,
+    brand_8,
+    brand_9,
+    brand_10,
     facebook,
     linkedin,
     fbs_1,
