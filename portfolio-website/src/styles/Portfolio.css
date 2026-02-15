@@ -1,0 +1,1034 @@
+@import url('https://fonts.cdnfonts.com/css/nexa-bold');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+/* ===================== PORTFOLIO PAGE CONTAINER ===================== */
+.pfpage-container {
+  width: 100%;
+  overflow-x: hidden;
+  background: linear-gradient(to bottom, #FFFFFF 0%, #FFFCF2 50%, #F9F3E2 100%);
+  min-height: 100vh;
+}
+
+/* ===================== HIGHLIGHTS SECTION ===================== */
+.pfpage-highlights-section {
+  margin-top: 150px;
+  animation: pfpageFadeInUp 0.8s ease-out;
+}
+
+@keyframes pfpageFadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.pfpage-highlights-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  color: #2d2d2d;
+  text-align: center;
+  margin: 0 0 80px 0;
+  animation: pfpageTitlePulse 1s ease-out;
+}
+
+@keyframes pfpageTitlePulse {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.pfpage-highlights-grid {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+
+.pfpage-highlight-card {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+  animation: pfpageSlideIn 0.6s ease-out;
+  animation-fill-mode: both;
+}
+
+.pfpage-highlight-card:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.pfpage-highlight-card:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.pfpage-highlight-card:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+@keyframes pfpageSlideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.pfpage-highlight-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.pfpage-highlight-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.pfpage-highlight-card:hover .pfpage-highlight-image-wrapper img {
+  transform: scale(1.05);
+}
+
+.pfpage-highlight-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.pfpage-highlight-card:hover .pfpage-highlight-overlay {
+  opacity: 1;
+}
+
+.pfpage-highlight-main-text {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  margin: 100px 0 15px 0;
+  line-height: 1.3;
+  animation: pfpageTextFadeIn 0.5s ease-out 0.1s both;
+}
+
+.pfpage-highlight-sub-text {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #E5E5E5;
+  text-align: center;
+  margin: 0 0 30px 0;
+  letter-spacing: 0.1em;
+  animation: pfpageTextFadeIn 0.5s ease-out 0.2s both;
+}
+
+@keyframes pfpageTextFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.pfpage-highlight-view-btn {
+  font-family: 'Nexa Bold', sans-serif;
+  padding: 14px 40px;
+  background: #F5B301;
+  color: #2d2d2d;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  animation: pfpageBtnBounce 0.5s ease-out 0.3s both;
+}
+
+@keyframes pfpageBtnBounce {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.pfpage-highlight-view-btn:hover {
+  background: #FFD700;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(245, 179, 1, 0.4);
+}
+
+/* ===================== PORTFOLIO WORKS SECTION ===================== */
+.pfpage-works-section {
+  padding: 150px 60px;
+}
+
+.pfpage-works-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 54px;
+  font-weight: 700;
+  color: #2d2d2d;
+  text-align: center;
+  margin: 0 0 40px 0;
+}
+
+.pfpage-filter-dropdown {
+  max-width: 1400px;
+  margin: 0 auto 30px;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.pfpage-dropdown-toggle {
+  font-family: 'Nexa Bold', sans-serif;
+  padding: 14px 30px;
+  background: none;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 200;
+  color: #37352F;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: all 0.3s ease;
+}
+
+.pfpage-dropdown-icon {
+  font-size: 30px;
+  transition: transform 0.3s ease;
+}
+
+.pfpage-dropdown-icon.pfpage-open {
+  transform: rotate(180deg);
+}
+
+.pfpage-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 8px;
+  background: #fff;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  min-width: 250px;
+  animation: pfpageDropdownSlide 0.3s ease-out;
+}
+
+@keyframes pfpageDropdownSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.pfpage-dropdown-item {
+  font-family: 'Nexa Bold', sans-serif;
+  padding: 14px 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 15px;
+  font-weight: 500;
+  color: #2d2d2d;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.pfpage-dropdown-item:last-child {
+  border-bottom: none;
+}
+
+.pfpage-dropdown-item:hover {
+  background: #FFF9E6;
+  color: #F5B301;
+}
+
+.pfpage-dropdown-item.pfpage-active {
+  background: #F5B301;
+  color: #fff;
+}
+
+.pfpage-works-grid {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.pfpage-work-card {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: none;
+  transition: all 0.3s ease;
+}
+
+.pfpage-work-image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.pfpage-work-image-wrapper img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+}
+
+.pfpage-work-card:hover {
+  transform: translateY(-8px);
+}
+
+.pfpage-work-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.pfpage-work-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.pfpage-work-card:hover .pfpage-work-overlay {
+  opacity: 1;
+}
+
+.pfpage-work-card:hover img {
+  transform: scale(1.05);
+}
+
+.pfpage-work-overlay .pfpage-overlay-logo {
+  width: 100px;
+  height: auto;
+}
+
+.pfpage-work-card .pfpage-work-info {
+  padding: 15px;
+}
+
+.pfpage-work-card .pfpage-work-info .pfpage-work-name {
+  font-family: 'Nexa Bold', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #2d2d2d;
+  margin-bottom: 8px;
+}
+
+.pfpage-work-card .pfpage-work-info .pfpage-work-description {
+  font-family: 'Nexa Bold', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* ===================== PORTFOLIO WORK MODAL ===================== */
+.pfpage-work-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  padding: 20px;
+  animation: pfpageFadeInOverlay 0.3s ease-out;
+}
+
+@keyframes pfpageFadeInOverlay {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.pfpage-work-modal-container::-webkit-scrollbar {
+  display: none;
+}
+
+.pfpage-work-modal-container {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.pfpage-work-modal-container {
+  border-radius: 20px;
+  max-width: 1200px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+  animation: pfpageZoomIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes pfpageZoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.pfpage-work-modal-close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: #2d2d2d;
+  color: #fff;
+  border: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.pfpage-work-modal-close:hover {
+  background: #F5B301;
+  transform: rotate(90deg);
+}
+
+.pfpage-work-modal-content {
+  padding: 60px 40px 40px;
+}
+
+.pfpage-work-modal-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.pfpage-work-modal-item {
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* ===== IMAGE ITEMS ===== */
+.pfpage-work-modal-image-item {
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.pfpage-work-modal-image-item:hover {
+  transform: scale(1.01);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.pfpage-work-modal-image-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.pfpage-work-modal-image-item:hover img {
+  transform: scale(1.05);
+}
+
+/* ===== VIDEO ITEMS ===== */
+.pfpage-work-modal-video-item {
+  grid-column: 1 / -1;
+  background: #000;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+}
+
+.pfpage-work-modal-video-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+.pfpage-work-modal-video-preview {
+  width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+  display: block;
+  border-radius: 8px;
+}
+
+/* ===================== DETAIL MODAL (VIDEOS/IMAGES) ===================== */
+.pfpage-detail-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10002;
+  animation: pfpageFadeIn 0.3s ease-out;
+  padding: 40px;
+}
+
+@keyframes pfpageFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.pfpage-detail-modal-container {
+  position: relative;
+  width: 90%;
+  max-width: 1200px;
+  max-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pfpage-detail-modal-close {
+  position: absolute;
+  top: -3rem;
+  right: -4rem;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border: 2px solid #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.pfpage-detail-modal-close:hover {
+  background: #F5B301;
+  border-color: #F5B301;
+  transform: rotate(90deg);
+}
+
+.pfpage-detail-modal-content {
+  width: 100%;
+  max-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pfpage-detail-modal-video {
+  width: 100%;
+  max-height: 90vh;
+  object-fit: contain;
+  display: block;
+}
+
+.pfpage-detail-modal-image {
+  width: 100%;
+  max-height: 90vh;
+  object-fit: contain;
+  display: block;
+}
+
+.pfpage-detail-modal-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border: 2px solid #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.pfpage-detail-modal-nav:hover {
+  background: #F5B301;
+  border-color: #F5B301;
+}
+
+.pfpage-detail-modal-prev {
+  left: -80px;
+}
+
+.pfpage-detail-modal-next {
+  right: -80px;
+}
+
+.pfpage-detail-modal-counter {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* ===================== RESPONSIVE - TABLET (1024px) ===================== */
+@media screen and (max-width: 1024px) {
+
+  .pfpage-highlights-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 60px;
+  }
+
+  .pfpage-highlight-card {
+    height: 400px;
+  }
+
+  .pfpage-highlight-main-text {
+    font-size: 1.7rem;
+  }
+
+  .pfpage-works-section {
+    padding: 80px 40px;
+  }
+
+  .pfpage-works-title {
+    font-size: 3rem;
+  }
+
+  .pfpage-work-modal-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .pfpage-work-modal-video-item {
+    padding: 15px;
+  }
+
+  .pfpage-work-modal-video-preview {
+    max-height: 400px;
+  }
+
+  .pfpage-detail-modal-container {
+    width: 85%;
+  }
+}
+
+/* ===================== RESPONSIVE - MOBILE (768px) ===================== */
+@media screen and (max-width: 768px) {
+
+  .pfpage-highlights-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+  }
+
+  .pfpage-highlight-card {
+    height: 350px;
+  }
+
+  .pfpage-highlight-main-text {
+    font-size: 1.4rem;
+    padding: 0 20px;
+  }
+
+  .pfpage-highlight-sub-text {
+    font-size: 0.85rem;
+  }
+
+  .pfpage-highlight-view-btn {
+    padding: 12px 35px;
+    font-size: 0.95rem;
+  }
+
+  .pfpage-works-section {
+    padding: 80px 25px;
+  }
+
+  .pfpage-works-title {
+    font-size: 2.5rem;
+  }
+
+  .pfpage-works-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .pfpage-work-modal-content {
+    padding: 50px 25px 30px;
+  }
+
+  .pfpage-work-modal-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .pfpage-work-modal-video-item {
+    padding: 12px;
+    grid-column: 1;
+  }
+
+  .pfpage-work-modal-video-preview {
+    max-height: 350px;
+  }
+
+  .pfpage-work-modal-close {
+    top: 5px;
+    right: 5px;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+  }
+
+  .pfpage-detail-modal-container {
+    width: 80%;
+  }
+
+  .pfpage-detail-modal-close {
+    width: 45px;
+    height: 45px;
+    font-size: 24px;
+  }
+
+  .pfpage-detail-modal-nav {
+    width: 50px;
+    height: 50px;
+    font-size: 32px;
+  }
+
+  .pfpage-detail-modal-prev {
+    left: -80px;
+  }
+
+  .pfpage-detail-modal-next {
+    right: -80px;
+  }
+
+  .pfpage-detail-modal-counter {
+    bottom: -50px;
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+/* ===================== RESPONSIVE - SMALL MOBILE (480px) ===================== */
+@media screen and (max-width: 480px) {
+
+
+  .pfpage-highlights-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+
+  .pfpage-highlight-card {
+    height: 300px;
+  }
+
+  .pfpage-highlight-main-text {
+    font-size: 1.2rem;
+    padding: 0 15px;
+  }
+
+  .pfpage-highlight-sub-text {
+    font-size: 0.8rem;
+    margin-bottom: 25px;
+  }
+
+  .pfpage-highlight-view-btn {
+    padding: 11px 30px;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .pfpage-works-section {
+    padding: 80px 20px;
+  }
+
+  .pfpage-works-title {
+    font-size: 2rem;
+  }
+
+  .pfpage-work-modal-overlay {
+    padding: 15px;
+  }
+
+  .pfpage-work-modal-content {
+    padding: 45px 20px 25px;
+  }
+
+  .pfpage-work-modal-video-item {
+    padding: 10px;
+  }
+
+  .pfpage-work-modal-video-preview {
+    max-height: 300px;
+  }
+
+  .pfpage-work-modal-close {
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+  }
+
+  .pfpage-detail-modal-container {
+    width: 100%;
+  }
+
+  .pfpage-detail-modal-close {
+    top: -4rem;
+    right: -2rem;
+    width: 35px;
+    height: 35px;
+  }
+
+  .pfpage-detail-modal-nav {
+    width: 40px;
+    height: 40px;
+    font-size: 28px;
+    top: 90%;
+    background: #F5B301;
+  }
+
+  .pfpage-detail-modal-prev {
+    left: 15px;
+  }
+
+  .pfpage-detail-modal-next {
+    right: 15px;
+  }
+
+  .pfpage-detail-modal-counter {
+    bottom: 10px;
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+}
+
+/* ===================== RESPONSIVE - EXTRA SMALL (320px) ===================== */
+@media screen and (max-width: 320px) {
+
+  .pfpage-highlights-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.7rem;
+    margin-bottom: 35px;
+  }
+
+  .pfpage-highlight-card {
+    height: 280px;
+  }
+
+  .pfpage-highlight-main-text {
+    font-size: 1.1rem;
+    padding: 0 12px;
+  }
+
+  .pfpage-highlight-sub-text {
+    font-size: 0.75rem;
+  }
+
+  .pfpage-highlight-view-btn {
+    padding: 10px 25px;
+    font-size: 0.85rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .pfpage-works-section {
+    padding: 80px 15px;
+  }
+
+  .pfpage-works-title {
+    font-size: 1.7rem;
+  }
+
+  .pfpage-work-modal-content {
+    padding: 45px 15px 20px;
+  }
+
+  .pfpage-work-modal-close {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+  }
+
+  .pfpage-detail-modal-close {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+  }
+
+  .pfpage-detail-modal-nav {
+    width: 35px;
+    height: 35px;
+    font-size: 24px;
+    top: 88%;
+  }
+
+  .pfpage-detail-modal-counter {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}
+
+/* ===================== RESPONSIVE - MINIMUM 200PX ===================== */
+@media screen and (max-width: 200px) {
+
+  .pfpage-highlights-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+  }
+
+  .pfpage-highlight-card {
+    height: 250px;
+  }
+
+  .pfpage-highlight-main-text {
+    font-size: 0.95rem;
+  }
+
+  .pfpage-highlight-sub-text {
+    font-size: 0.7rem;
+    margin-bottom: 15px;
+  }
+
+  .pfpage-highlight-view-btn {
+    padding: 9px 20px;
+    font-size: 0.8rem;
+    margin-bottom: 6rem;
+  }
+
+  .pfpage-works-section {
+    padding: 80px 10px;
+  }
+
+  .pfpage-works-title {
+    font-size: 1.4rem;
+  }
+
+  .pfpage-dropdown-toggle {
+    padding: 10px 18px;
+    font-size: 12px;
+  }
+
+  .pfpage-work-name {
+    font-size: 11px;
+    padding: 10px;
+  }
+
+  .pfpage-overlay-logo {
+    width: 50px;
+  }
+
+  .pfpage-work-modal-overlay {
+    padding: 10px;
+  }
+
+  .pfpage-work-modal-content {
+    padding: 45px 10px 15px;
+  }
+
+  .pfpage-work-modal-grid {
+    gap: 10px;
+  }
+
+  .pfpage-work-modal-close {
+    top: 10px;
+    right: 10px;
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
+  }
+
+  .pfpage-detail-modal-close {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+  }
+
+  .pfpage-detail-modal-nav {
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+  }
+
+  .pfpage-detail-modal-counter {
+    padding: 6px 12px;
+    font-size: 11px;
+  }
+}

@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import '../styles/Services.css';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { FaFacebookF, FaLinkedinIn } from 'react-icons/fa';
 import { SiAboutdotme } from 'react-icons/si';
+import { ProfileContext } from '../context/ProfileContext';
 
 const Services = () => {
+  const { navigate } = useContext(ProfileContext);
   const services = [
     {
       id: 1,
@@ -85,7 +87,7 @@ const Services = () => {
         {/* CTA Section */}
         <section className="services-cta">
           <h2 className="services-cta-title">READY TO BUILD TOGETHER?</h2>
-          <button className="services-cta-button">Work with me!</button>
+          <button className="services-cta-button" onClick={() => navigate('/contact')}>Work with me!</button>
         </section>
       </div>
       <Footer />

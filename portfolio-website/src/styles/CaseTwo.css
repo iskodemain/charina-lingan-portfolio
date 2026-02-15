@@ -1,0 +1,1172 @@
+@import url('https://fonts.cdnfonts.com/css/nexa-bold');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+/* ===================== PAGE CONTAINER ===================== */
+.casetwo-page {
+  width: 100%;
+  overflow-x: hidden;
+  background: linear-gradient(to bottom, #FFFFFF 0%, #FFFCF2 50%, #F9F3E2 100%);
+  min-height: 100vh;
+}
+
+/* ===================== COVER SECTION ===================== */
+.casetwo-cover-section {
+  margin-top: 6rem;
+  animation: casetwoFadeInUp 0.8s ease-out;
+}
+
+@keyframes casetwoFadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.casetwo-cover-image-container {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  animation: casetwoZoomIn 0.6s ease-out 0.2s both;
+}
+
+@keyframes casetwoZoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.casetwo-cover-image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.casetwo-cover-text-overlay {
+  position: absolute;
+  bottom: 180px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 90%;
+  max-width: 900px;
+  animation: casetwoSlideUp 0.6s ease-out 0.4s both;
+}
+
+@keyframes casetwoSlideUp {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 20px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+.casetwo-cover-label {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  margin-bottom: 15px;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.casetwo-cover-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  color: #FFFFFF;
+  margin-bottom: 15px;
+  text-shadow: 0 3px 20px rgba(0, 0, 0, 0.7);
+}
+
+.casetwo-cover-subtitle {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  margin-bottom: 100px;
+  line-height: 1.6;
+  text-shadow: 0 2px 15px rgba(0, 0, 0, 0.7);
+}
+
+.casetwo-cover-tags {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+  animation: casetwoTagsFade 0.6s ease-out 0.6s both;
+}
+
+@keyframes casetwoTagsFade {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.casetwo-cover-tag {
+  padding: 12px 24px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* ===================== DESCRIPTION SECTION ===================== */
+.casetwo-description-section {
+  padding: 80px 60px;
+  max-width: 900px;
+  margin: 0 auto;
+  animation: casetwoFadeIn 0.6s ease-out 0.8s both;
+}
+
+@keyframes casetwoFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.casetwo-description-text {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #666;
+  line-height: 1.8;
+  text-align: center;
+  margin: 0;
+}
+
+/* ===================== SINGLE SECTION (Content Overview, Performance, Copywriting) ===================== */
+.casetwo-single-section {
+  padding: 60px 60px;
+  animation: casetwoFadeInScale 0.6s ease-out both;
+}
+
+@keyframes casetwoFadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.casetwo-single-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.casetwo-single-card {
+  padding: 40px 30px;
+  background-color: #E9BC32;
+  border-radius: 50px;
+  box-shadow: inset 0 0px 15px 1px #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  animation: casetwoCardSlide 0.6s ease-out;
+}
+
+@keyframes casetwoCardSlide {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.casetwo-single-card:hover {
+  transform: translateY(-5px);
+  box-shadow: inset 0 0px 20px 2px #ffffff, 0 10px 30px rgba(233, 188, 50, 0.3);
+}
+
+.casetwo-single-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 50px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.casetwo-single-card:hover img {
+  transform: scale(1.02);
+}
+
+/* ===================== DUAL SECTION (Paid Ad Success) ===================== */
+.casetwo-dual-section {
+  padding: 60px 60px;
+  animation: casetwoFadeInScale 0.6s ease-out both;
+}
+
+.casetwo-dual-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.casetwo-dual-card {
+  animation: casetwoCardSlide 0.6s ease-out;
+}
+
+.casetwo-dual-left {
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  animation-delay: 0.2s;
+}
+
+.casetwo-dual-left:hover {
+  transform: translateY(-5px);
+}
+
+.casetwo-dual-right {
+  margin-left: -4rem;
+  padding: 40px 30px;
+  background-color: #E9BC32;
+  border-radius: 50px;
+  box-shadow: inset 0 0px 15px 1px #ffffff;
+  animation-delay: 0.4s;
+}
+
+.casetwo-dual-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 50px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.casetwo-dual-left:hover img {
+  transform: scale(1.02);
+}
+
+/* ===================== LOGO SECTION ===================== */
+.casetwo-logo-section {
+  padding: 60px 60px;
+  text-align: center;
+  animation: casetwoRotateIn 0.6s ease-out;
+}
+
+@keyframes casetwoRotateIn {
+  from {
+    opacity: 0;
+    transform: rotate(-10deg) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+.casetwo-logo {
+  height: 50px;
+  width: auto;
+  opacity: 0.3;
+  transition: all 0.3s ease;
+}
+
+.casetwo-logo:hover {
+  opacity: 0.6;
+  transform: scale(1.1);
+}
+
+/* ===================== PARTNERSHIP SECTION ===================== */
+.casetwo-partnership-section {
+  padding: 80px 60px;
+  max-width: 900px;
+  margin: 0 auto;
+  animation: casetwoFadeInUp 0.6s ease-out;
+}
+
+.casetwo-section-title {
+  font-weight: 400;
+  font-size: 2rem;
+  color: #37352F;
+  text-align: center;
+  margin: 0 0 30px 0;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.casetwo-partnership-text {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #666;
+  line-height: 1.8;
+  text-align: center;
+  margin: 0;
+}
+
+/* ===================== BANNER SECTION ===================== */
+.casetwo-banner-section {
+  padding: 0;
+  margin: 60px 0;
+  animation: casetwoFadeIn 0.6s ease-out;
+}
+
+.casetwo-banner-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ===================== PORTFOLIO SECTION ===================== */
+.casetwo-portfolio-section {
+  padding: 0px 40px 40px;
+  margin: 60px 0;
+  animation: casetwoPortfolioFade 0.6s ease-out;
+}
+
+@keyframes casetwoPortfolioFade {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.casetwo-portfolio-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  background: #E9BC32;
+  border-radius: 40px;
+  padding: 60px 30px;
+  box-shadow: inset 0 0px 15px 1px #ffffff;
+}
+
+.casetwo-portfolio-main-container {
+  border-radius: 40px;
+  background-color: white;
+  padding: 2rem 2rem 4rem;
+}
+
+.casetwo-portfolio-title {
+  font-family: 'Nexa Bold', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #37352F;
+  text-align: center;
+  margin: 0 0 30px 0;
+  letter-spacing: 0.05em;
+}
+
+.casetwo-portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.casetwo-portfolio-card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  animation: casetwoCardPop 0.5s ease-out;
+  animation-fill-mode: both;
+}
+
+.casetwo-portfolio-card:nth-child(1) { animation-delay: 0.1s; }
+.casetwo-portfolio-card:nth-child(2) { animation-delay: 0.2s; }
+.casetwo-portfolio-card:nth-child(3) { animation-delay: 0.3s; }
+.casetwo-portfolio-card:nth-child(4) { animation-delay: 0.4s; }
+.casetwo-portfolio-card:nth-child(5) { animation-delay: 0.5s; }
+.casetwo-portfolio-card:nth-child(6) { animation-delay: 0.6s; }
+
+@keyframes casetwoCardPop {
+  from {
+    opacity: 0;
+    transform: scale(0.9) translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.casetwo-portfolio-image-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.casetwo-portfolio-image-wrapper img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.casetwo-portfolio-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(245, 179, 1, 0.2);
+}
+
+.casetwo-portfolio-card:hover .casetwo-portfolio-image-wrapper img {
+  transform: scale(1.05);
+}
+
+.casetwo-portfolio-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.casetwo-portfolio-card:hover .casetwo-portfolio-overlay {
+  opacity: 1;
+}
+
+.casetwo-portfolio-card .casetwo-portfolio-overlay-logo {
+  width: 100px;
+  height: auto;
+}
+
+/* ===================== RESULT SECTION ===================== */
+.casetwo-result-section {
+  padding: 80px 60px;
+  max-width: 1400px;
+  margin: 0 auto;
+  animation: casetwoFadeInUp 0.6s ease-out;
+}
+
+.casetwo-result-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.casetwo-result-image-wrapper {
+  animation: casetwoResultImageFade 0.6s ease-out 0.2s both;
+}
+
+@keyframes casetwoResultImageFade {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.casetwo-result-image-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.casetwo-result-image-wrapper img:hover {
+  transform: scale(1.02);
+}
+
+.casetwo-result-content {
+  animation: casetwoResultContentFade 0.6s ease-out 0.4s both;
+}
+
+@keyframes casetwoResultContentFade {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.casetwo-result-content .casetwo-section-title {
+  font-weight: 400;
+  font-size: 2rem;
+  color: #37352F;
+  text-align: left;
+  margin: 0 0 30px 0;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.casetwo-result-text {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #666;
+  line-height: 1.8;
+  text-align: left;
+  margin: 0;
+}
+
+.casetwo-result-highlight {
+  font-weight: 700;
+  color: #2d2d2d;
+}
+
+/* ===================== CTA SECTION ===================== */
+.casetwo-cta-section {
+  padding: 100px 60px;
+  text-align: center;
+  animation: casetwoCtaFade 0.6s ease-out;
+}
+
+@keyframes casetwoCtaFade {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.casetwo-cta-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin: 0 0 40px 0;
+  line-height: 1.3;
+  background: linear-gradient(90deg, #37352F 0%, #9D9887 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.casetwo-cta-button {
+  padding: 18px 50px;
+  background: linear-gradient(to right, #E9BC32 44%, #C5CB82 100%);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(245, 179, 1, 0.3);
+}
+
+.casetwo-cta-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(245, 179, 1, 0.4);
+}
+
+/* ===================== MODAL ===================== */
+.casetwo-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  animation: casetwoFadeIn 0.3s ease-out;
+  padding: 40px;
+}
+
+.casetwo-modal-container {
+  position: relative;
+  width: 90%;
+  max-width: 1200px;
+  max-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.casetwo-modal-close {
+  position: absolute;
+  top: -1rem;
+  right: -4rem;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border: 2px solid #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.casetwo-modal-close:hover {
+  background: #F5B301;
+  border-color: #F5B301;
+  transform: rotate(90deg);
+}
+
+.casetwo-modal-content {
+  width: 100%;
+  max-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.casetwo-modal-video {
+  width: 100%;
+  max-height: 90vh;
+  object-fit: contain;
+  display: block;
+}
+
+.casetwo-modal-image {
+  width: 100%;
+  max-height: 90vh;
+  object-fit: contain;
+  display: block;
+}
+
+.casetwo-modal-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border: 2px solid #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.casetwo-modal-nav:hover {
+  background: #F5B301;
+  border-color: #F5B301;
+}
+
+.casetwo-modal-prev {
+  left: -80px;
+}
+
+.casetwo-modal-next {
+  right: -80px;
+}
+
+.casetwo-modal-counter {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* ===================== RESPONSIVE - TABLET (1024px) ===================== */
+@media screen and (max-width: 1024px) {
+  .casetwo-cover-text-overlay {
+    bottom: 140px;
+  }
+
+  .casetwo-cover-title {
+    font-size: 2.5rem;
+  }
+
+  .casetwo-cover-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .casetwo-cover-label {
+    font-size: 1.3rem;
+  }
+
+  .casetwo-cover-tag {
+    padding: 10px 18px;
+    font-size: 0.85rem;
+  }
+
+  .casetwo-dual-container {
+    gap: 30px;
+  }
+
+  .casetwo-single-card,
+  .casetwo-dual-left,
+  .casetwo-dual-right {
+    padding: 35px 25px;
+  }
+
+  .casetwo-portfolio-container {
+    padding: 50px 25px;
+  }
+
+  .casetwo-result-section {
+    padding: 70px 40px;
+  }
+
+  .casetwo-result-container {
+    gap: 50px;
+  }
+
+  .casetwo-result-content .casetwo-section-title {
+    font-size: 1.8rem;
+  }
+
+  .casetwo-result-text {
+    font-size: 1.05rem;
+  }
+
+  .casetwo-modal-container {
+    width: 85%;
+  }
+}
+
+/* ===================== RESPONSIVE - MOBILE (768px) ===================== */
+@media screen and (max-width: 768px) {
+  .casetwo-cover-text-overlay {
+    bottom: 80px;
+  }
+
+  .casetwo-cover-title {
+    font-size: 1.5rem;
+  }
+
+  .casetwo-cover-subtitle {
+    font-size: 0.85rem;
+    margin-bottom: 3rem;
+  }
+
+  .casetwo-cover-label {
+    font-size: 1.1rem;
+  }
+
+  .casetwo-cover-tag {
+    padding: 8px 15px;
+    font-size: 0.6rem;
+  }
+
+  .casetwo-dual-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .casetwo-single-card,
+  .casetwo-dual-left {
+    padding: 30px 20px;
+  }
+
+   .casetwo-dual-right {
+    margin-top: -4rem;
+    margin-left: 0;
+    padding: 40px 30px;
+    background-color: #E9BC32;
+    border-radius: 50px;
+    box-shadow: inset 0 0px 15px 1px #ffffff;
+    animation-delay: 0.4s;
+    }
+
+  .casetwo-portfolio-container {
+    padding: 40px 20px;
+  }
+
+  .casetwo-portfolio-title {
+    font-size: 2rem;
+  }
+
+  .casetwo-portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .casetwo-section-title {
+    font-size: 1.7rem;
+  }
+
+  .casetwo-cta-title {
+    font-size: 2rem;
+  }
+
+  .casetwo-result-section {
+    padding: 60px 25px;
+  }
+
+  .casetwo-result-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .casetwo-result-image-wrapper img {
+    border-radius: 15px;
+  }
+
+  .casetwo-result-content .casetwo-section-title {
+    font-size: 1.7rem;
+    text-align: center;
+  }
+
+  .casetwo-result-text {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .casetwo-modal-container {
+    width: 80%;
+  }
+
+  .casetwo-modal-close {
+    width: 45px;
+    height: 45px;
+    font-size: 24px;
+  }
+
+  .casetwo-modal-nav {
+    width: 50px;
+    height: 50px;
+    font-size: 32px;
+  }
+
+  .casetwo-modal-prev {
+    left: -60px;
+  }
+
+  .casetwo-modal-next {
+    right: -60px;
+  }
+
+  .casetwo-modal-counter {
+    bottom: -50px;
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+/* ===================== RESPONSIVE - SMALL MOBILE (480px) ===================== */
+@media screen and (max-width: 480px) {
+  .casetwo-cover-text-overlay {
+    bottom: 30px;
+  }
+
+  .casetwo-cover-title {
+    font-size: 0.7rem;
+  }
+
+  .casetwo-cover-subtitle {
+    font-size: 0.7rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .casetwo-cover-label {
+    font-size: 0.9rem;
+  }
+
+  .casetwo-cover-tag {
+    padding: 8px 5px;
+    font-size: 0.5rem;
+  }
+
+  .casetwo-cover-tags {
+    gap: 8px;
+  }
+
+  .casetwo-single-card,
+  .casetwo-dual-left,
+  .casetwo-dual-right {
+    padding: 25px 15px;
+  }
+
+  .casetwo-description-section,
+  .casetwo-partnership-section {
+    padding: 60px 20px;
+  }
+
+  .casetwo-description-text,
+  .casetwo-partnership-text {
+    font-size: 0.95rem;
+  }
+
+  .casetwo-single-section,
+  .casetwo-dual-section {
+    padding: 50px 20px;
+  }
+
+  .casetwo-logo {
+    height: 40px;
+  }
+
+  .casetwo-section-title {
+    font-size: 1.5rem;
+  }
+
+  .casetwo-portfolio-section {
+    padding: 0px 20px 30px;
+  }
+
+  .casetwo-portfolio-container {
+    padding: 30px 15px;
+  }
+
+  .casetwo-cta-section {
+    padding: 80px 20px;
+  }
+
+  .casetwo-cta-title {
+    font-size: 1.7rem;
+  }
+
+  .casetwo-cta-button {
+    padding: 16px 40px;
+    font-size: 1rem;
+  }
+
+  .casetwo-result-section {
+    padding: 60px 20px;
+  }
+
+  .casetwo-result-container {
+    gap: 30px;
+  }
+
+  .casetwo-result-image-wrapper img {
+    border-radius: 12px;
+  }
+
+  .casetwo-result-content .casetwo-section-title {
+    font-size: 1.5rem;
+  }
+
+  .casetwo-result-text {
+    font-size: 0.95rem;
+  }
+
+  .casetwo-modal-container {
+    width: 80%;
+  }
+
+  .casetwo-modal-close {
+    top: -3rem;
+    right: -3rem;
+    width: 35px;
+    height: 35px;
+  }
+
+  .casetwo-modal-nav {
+    width: 40px;
+    height: 40px;
+    font-size: 28px;
+    top: 50%;
+    background: #F5B301;
+  }
+
+  .casetwo-modal-prev {
+    left: 15px;
+  }
+
+  .casetwo-modal-next {
+    right: 15px;
+  }
+
+  .casetwo-modal-counter {
+    bottom: 10px;
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+}
+
+/* ===================== RESPONSIVE - EXTRA SMALL (320px) ===================== */
+@media screen and (max-width: 320px) {
+  .casetwo-cover-text-overlay {
+    bottom: 20px;
+  }
+
+  .casetwo-cover-title {
+    font-size: 0.6rem;
+    margin-bottom: 5px;
+  }
+
+  .casetwo-cover-subtitle {
+    font-size: 0.6rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .casetwo-cover-label {
+    font-size: 0.8rem;
+  }
+
+  .casetwo-cover-tag {
+    padding: 8px 5px;
+    font-size: 0.3rem;
+  }
+
+  .casetwo-cover-tags {
+    gap: 5px;
+  }
+
+  .casetwo-result-section {
+    padding: 50px 15px;
+  }
+
+  .casetwo-result-container {
+    gap: 25px;
+  }
+
+  .casetwo-result-image-wrapper img {
+    border-radius: 10px;
+  }
+
+  .casetwo-result-content .casetwo-section-title {
+    font-size: 1.3rem;
+  }
+
+  .casetwo-result-text {
+    font-size: 0.9rem;
+  }
+
+  .casetwo-modal-nav {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+  }
+
+  .casetwo-modal-close {
+    top: -3rem;
+    right: -2.5rem;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* ===================== RESPONSIVE - MINIMUM 200PX ===================== */
+@media screen and (max-width: 200px) {
+  .casetwo-cover-title {
+    font-size: 0.5rem;
+  }
+
+  .casetwo-cover-subtitle {
+    font-size: 0.5rem;
+  }
+
+  .casetwo-cover-label {
+    font-size: 0.6rem;
+  }
+
+  .casetwo-cover-tag {
+    padding: 6px 12px;
+    font-size: 0.25rem;
+  }
+
+  .casetwo-single-card,
+  .casetwo-dual-left,
+  .casetwo-dual-right {
+    padding: 20px 10px;
+  }
+
+  .casetwo-description-text,
+  .casetwo-partnership-text {
+    font-size: 0.85rem;
+  }
+
+  .casetwo-logo {
+    height: 30px;
+  }
+
+  .casetwo-section-title {
+    font-size: 1.2rem;
+  }
+
+  .casetwo-portfolio-section {
+    padding: 0px 10px 20px;
+  }
+
+  .casetwo-portfolio-container {
+    padding: 25px 12px;
+  }
+
+  .casetwo-cta-title {
+    font-size: 1.4rem;
+  }
+
+  .casetwo-cta-button {
+    padding: 14px 30px;
+    font-size: 0.9rem;
+  }
+
+  .casetwo-result-section {
+    padding: 40px 10px;
+  }
+
+  .casetwo-result-container {
+    gap: 20px;
+  }
+
+  .casetwo-result-image-wrapper img {
+    border-radius: 8px;
+  }
+
+  .casetwo-result-content .casetwo-section-title {
+    font-size: 1.2rem;
+  }
+
+  .casetwo-result-text {
+    font-size: 0.85rem;
+  }
+
+  .casetwo-modal-close {
+    width: 25px;
+    height: 25px;
+    font-size: 18px;
+    right: -2rem;
+  }
+
+  .casetwo-modal-nav {
+    width: 15px;
+    height: 15px;
+    font-size: 20px;
+  }
+
+  .casetwo-modal-counter {
+    padding: 6px 12px;
+    font-size: 11px;
+  }
+}

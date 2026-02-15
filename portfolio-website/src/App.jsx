@@ -5,6 +5,8 @@ import Contact from './pages/Contact'
 import Portfolio from './pages/Portfolio'
 import Services from './pages/Services'
 import { Route, Routes } from 'react-router-dom'
+import CaseOne from './components/CaseOne'
+import CaseTwo from './components/CaseTwo'
 
 function App() {
   return (
@@ -16,6 +18,10 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/services" element={<Services />} />
+
+        {/* CASE PAGE */}
+        <Route path="/portfolio/case-one" element={<CaseOne />} />
+        <Route path="/portfolio/case-two" element={<CaseTwo />} />
       </Routes>
     </div>
   )

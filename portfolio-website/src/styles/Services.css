@@ -30,7 +30,6 @@
   font-size: 64px;
   font-weight: 700;
   color: #2d2d2d;
-  font-family: 'Montserrat', sans-serif;
 }
 
 /* ===================== SERVICES GRID SECTION ===================== */
@@ -116,9 +115,10 @@
 }
 
 .services-cta-button {
+  font-family: 'Montserrat', sans-serif;
   background: linear-gradient(to bottom,#E9BC32 44%,#C5CB82 100%);
   color: #FFFFFF;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
   padding: 18px 50px;
   border: none;
@@ -129,7 +129,6 @@
 }
 
 .services-cta-button:hover {
-  background: var(--gold-light);
   transform: translateY(-3px);
   box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
 }
