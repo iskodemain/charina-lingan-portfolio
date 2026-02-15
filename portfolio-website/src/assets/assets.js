@@ -325,7 +325,151 @@ import one_cga_7 from './one_cga_7.mp4'
 import one_cga_8 from './one_cga_8.mp4'
 import one_cga_9 from './one_cga_9.mp4'
 
+import highlights_1 from './highlights_1.png'
+import highlights_2 from './highlights_2.png'
+import highlights_3 from './highlights_3.png'
+
+import cover_case_1 from './cover_case_1.png'
+import old_feed_case_1 from './old_feed_case_1.png'
+import new_feed_case_1 from './new_feed_case_1.png'
+import old_post_case_1 from './old_post_case_1.png'
+import new_post_case_1 from './new_post_case_1.png'
+import old_reel_case_1 from './old_reel_case_1.png'
+import new_reel_case_1 from './new_reel_case_1.png'
+
+
+import reels_1_case_1 from './reels_1_case_1.png'
+import reels_2_case_1 from './reels_2_case_1.png'
+import reels_3_case_1 from './reels_3_case_1.png'
+import reels_4_case_1 from './reels_4_case_1.png'
+import reels_5_case_1 from './reels_5_case_1.png'
+import reels_6_case_1 from './reels_6_case_1.png'
+
+import reel_1 from './reel_1.mp4'
+import reel_2 from './reel_2.mp4'
+import reel_3 from './reel_3.mp4'
+import reel_4 from './reel_4.mp4'
+import reel_5 from './reel_5.mp4'
+import reel_6 from './reel_6.mp4'
+
+import story_1_case_1 from './story_1_case_1.png'
+import story_2_case_1 from './story_2_case_1.png'
+import story_3_case_1 from './story_3_case_1.png'
+import story_4_case_1 from './story_4_case_1.png'
+import story_5_case_1 from './story_5_case_1.png'
+import story_6_case_1 from './story_6_case_1.png'
+
+import the_result_case_1 from './the_result_case_1.png'
+
+
+import cover_case_2 from './cover_case_2.png'
+import banner_case_2 from './banner_case_2.png'
+import the_result_case_2 from './the_result_case_2.png'
+import co_case_2 from './co_case_2.png'
+import pr_case_2 from './pr_case_2.png'
+import tpas_case_2 from './tpas_case_2.png'
+import tpasc_case_2 from './tpasc_case_2.png'
+import copywriting_case_2 from './copywriting_case_2.png'
+
+import sme_1_case_2 from './sme_1_case_2.png'
+import sme_2_case_2 from './sme_2_case_2.png'
+import sme_3_case_2 from './sme_3_case_2.png'
+import sme_4_case_2 from './sme_4_case_2.png'
+import sme_5_case_2 from './sme_5_case_2.png'
+import sme_6_case_2 from './sme_6_case_2.png'
+import sme_7_case_2 from './sme_7_case_2.png'
+import sme_8_case_2 from './sme_8_case_2.png'
+import sme_9_case_2 from './sme_9_case_2.png'
+
+import csl_1 from './csl_1.mp4'
+import csl_2 from './csl_2.jpg'
+import csl_3 from './csl_3.mp4'
+import csl_4_1 from './csl_4_1.jpg'
+import csl_4_2 from './csl_4_2.jpg'
+import csl_4_3 from './csl_4_3.jpg'
+import csl_4_4 from './csl_4_4.jpg'
+import csl_4_5 from './csl_4_5.jpg'
+import csl_5 from './csl_5.mp4'
+import csl_6_1 from './csl_6_1.jpg'
+import csl_6_2 from './csl_6_2.jpg'
+import csl_6_3 from './csl_6_3.jpg'
+import csl_6_4 from './csl_6_4.jpg'
+import csl_7 from './csl_7.mp4'
+import csl_8_1 from './csl_8_1.jpg'
+import csl_8_2 from './csl_8_2.jpg'
+import csl_8_3 from './csl_8_3.jpg'
+import csl_8_4 from './csl_8_4.jpg'
+import csl_8_5 from './csl_8_5.jpg'
+import csl_9 from './csl_9.mp4'
+
+import paid_ad_vid from './paid_ad_vid.mp4'
+
+
 export const assets = {
+    paid_ad_vid,
+    csl_1,
+    csl_2,
+    csl_3,
+    csl_4_1,
+    csl_4_2,
+    csl_4_3,
+    csl_4_4,
+    csl_4_5,
+    csl_5,
+    csl_6_1,
+    csl_6_2,
+    csl_6_3,
+    csl_6_4,
+    csl_7,
+    csl_8_1,
+    csl_8_2,
+    csl_8_3,
+    csl_8_4,
+    csl_8_5,
+    csl_9,
+    sme_1_case_2,
+    sme_2_case_2,
+    sme_3_case_2,
+    sme_4_case_2,
+    sme_5_case_2,
+    sme_6_case_2,
+    sme_7_case_2,
+    sme_8_case_2,
+    sme_9_case_2,
+    copywriting_case_2,
+    tpasc_case_2,
+    tpas_case_2,
+    pr_case_2,
+    co_case_2,
+    the_result_case_2,
+    banner_case_2,
+    cover_case_2,
+    the_result_case_1,
+    story_1_case_1,
+    story_2_case_1,
+    story_3_case_1,
+    story_4_case_1,
+    story_5_case_1,
+    story_6_case_1,
+    reel_1, 
+    reel_2,
+    reel_3,
+    reel_4,
+    reel_5,
+    reel_6,
+    reels_1_case_1,
+    reels_2_case_1,
+    reels_3_case_1,
+    reels_4_case_1,
+    reels_5_case_1,
+    reels_6_case_1,
+    cover_case_1,
+    old_feed_case_1, 
+    new_feed_case_1,
+    old_post_case_1,
+    new_post_case_1,
+    old_reel_case_1,
+    new_reel_case_1,
     logo,
     profile,
     brand_1,
@@ -601,5 +745,9 @@ export const assets = {
     one_cga_7,
     one_cga_8,
     one_cga_9,
+
+    highlights_1,
+    highlights_2,
+    highlights_3
 
 }
