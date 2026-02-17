@@ -405,7 +405,40 @@ import csl_9 from './csl_9.mp4'
 import paid_ad_vid from './paid_ad_vid.mp4'
 
 
+import cover_case_3 from './cover_case_3.png'
+import cbi_case_3 from './cbi_case_3.png'
+import pbi_1 from './pbi_1.png'
+import pbi_2 from './pbi_2.png'
+import pbi_3 from './pbi_3.png'
+
+import fyt_case_3 from './fyt_case_3.png'
+import fytbb_case_3 from './fytbb_case_3.png'
+import chat_case_3 from './chat_case_3.png'
+
+import gt from './gt.png'
+import st from './st.png'
+import vt from './vt.png'
+
+import howlers_left from './howlers_left.png'
+import howlers_right from './howlers_right.png'
+
+import the_result_case_3 from './the_result_case_3.png'
+
 export const assets = {
+    the_result_case_3,
+    howlers_left,
+    howlers_right,
+    gt,
+    st,
+    vt,
+    chat_case_3,
+    fyt_case_3,
+    fytbb_case_3,
+    pbi_1,
+    pbi_2,
+    pbi_3,
+    cbi_case_3,
+    cover_case_3,
     paid_ad_vid,
     csl_1,
     csl_2,
