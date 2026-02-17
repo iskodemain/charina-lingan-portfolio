@@ -7,6 +7,7 @@ import Services from './pages/Services'
 import { Route, Routes } from 'react-router-dom'
 import CaseOne from './components/CaseOne'
 import CaseTwo from './components/CaseTwo'
+import CaseThree from './components/CaseThree'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         {/* CASE PAGE */}
         <Route path="/portfolio/case-one" element={<CaseOne />} />
         <Route path="/portfolio/case-two" element={<CaseTwo />} />
+        <Route path="/portfolio/case-three" element={<CaseThree />} />
       </Routes>
     </div>
   )
